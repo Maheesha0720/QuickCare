@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="btn">#077FC3</color>
+    <color name="link">#673AB7</color>
+    <color name="input">#E1373737</color>
+    <color name="hint">#BF373737</color>
+    <color name="back">#639C9A9A</color>
+    <color name="logo">#278325</color>
+    <color name="back02">#78CDF8</color>
+    <color name="transparentback">#40FFFFFF</color>
+    <color name="red">#F8ED5252</color>
+    <color name="green">#F89FF481</color>
+    <color name="transparent">#00FFFFFF</color>
+
+
+</resources>

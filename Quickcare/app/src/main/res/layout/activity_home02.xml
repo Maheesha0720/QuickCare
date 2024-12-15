@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home02">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <SearchView
+            android:id="@+id/searchBar"
+            android:layout_width="294dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/cardView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="122dp"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="98dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/logo"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/search02"
+            android:textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="57dp"
+            android:layout_height="45dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="315dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="686dp"
+            android:backgroundTint="@color/transparent"
+            app:srcCompat="@drawable/quantum_ic_search_grey600_24"
+            app:tint="@color/logo" />
+
+        <Button
+            android:id="@+id/emergency"
+            android:layout_width="162dp"
+            android:layout_height="58dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="132dp"
+            android:layout_marginTop="768dp"
+            android:layout_marginEnd="117dp"
+            android:layout_marginBottom="21dp"
+            android:backgroundTint="@color/red"
+            android:fontFamily="@font/font01"
+            android:text="@string/emerency"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="wrap_content"
+            android:layout_height="437dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="154dp"
+            app:cardBackgroundColor="@color/transparentback"
+            app:cardCornerRadius="15dp">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MapsActivity" />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="182dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="121dp"
+            android:fontFamily="@font/font01"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/logo"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="712dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="91dp"
+            android:fontFamily="@font/font01"
+            android:text="If you want an ambulence, press the Emergency button."
+            android:textAlignment="center"
+            android:textColor="@color/logo"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cardView2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginEnd="188dp"
+            android:layout_marginBottom="19dp"
+            android:fontFamily="@font/font01"
+            android:text="@string/search_results"
+            android:textColor="@color/input"
+            android:textSize="25dp" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profilePic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="328dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="785dp"
+            android:backgroundTint="@color/transparent"
+            android:backgroundTintMode="src_over"
+            android:clickable="true"
+            android:contentDescription="TODO"
+            app:shapeAppearanceOverlay="@style/circular"
+            app:srcCompat="@drawable/user02" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

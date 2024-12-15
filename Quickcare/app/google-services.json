@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "905467578544",
+    "project_id": "quick-care-2f515",
+    "storage_bucket": "quick-care-2f515.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905467578544:android:55962cf3841cbf89c95375",
+        "android_client_info": {
+          "package_name": "com.example.quickcare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMU7sp_gVJIWtppgD_6p-r088rKxjgyx0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
